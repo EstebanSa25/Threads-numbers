@@ -9,8 +9,8 @@ namespace ProyectoSO1
     public partial class Form1 : Form
     {
         public readonly int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };//Arreglo de numeros
-        List<int> even_numbers = new List<int>();//Listas para guardar los numeros pares
-        List<int> odd_numbers = new List<int>();//Listas para guardar los numeros impares
+        List<int> even_numbers = new List<int>();//Listas para guardar las potencias de los numeros pares
+        List<int> odd_numbers = new List<int>();//Listas para guardar las factoriales de los numeros impares
         Thread thread_even;//Declaracion de hilo par
         Thread thread_odd;//Declaracion de hilo impar
         public Form1()
@@ -18,7 +18,7 @@ namespace ProyectoSO1
             InitializeComponent();
         }
         #region Functions
-        public void startOrShowThread(Thread thread, string threadName) //Funcion generica que inicia o muestra un hilo
+        public void startThread(Thread thread) //Funcion generica que inicia o muestra un hilo
         {
             if (!thread.IsAlive)// Validacion para saber si el hilo no se ha iniciado
             {
@@ -32,7 +32,7 @@ namespace ProyectoSO1
         }
         public void genericCalculation(bool odd, Guna2DataGridView data)//Funcion generica que se ejecuta en los hilos
         {
-            List<int> lista = odd ? odd_numbers : even_numbers;// validacion para saber si se ejecuta el hilo en modo en par o impar y guarda la lista dependiendo
+            List<int> lista = odd ? odd_numbers : even_numbers;// validacion ternaria para saber si se ejecuta el hilo en modo en par o impar y guarda la lista dependiendo
             foreach (var number in numbers)
             {
                 updateLabel(lblProcesandoNumero, $"Procesando:{number}");/*Actualiza el label del numero*/
@@ -53,7 +53,7 @@ namespace ProyectoSO1
             }
             number_filling(data, lista);//Llena el datagridview con la lista
         }
-        public void number_filling(Guna2DataGridView L, List<int> numbers)//Funcion generica que llena los numeros en un datagridview
+        public void number_filling(Guna2DataGridView L, List<int> numbers)//Funcion generica que llena los valores en un datagridview
         {
             int counter = 0; //Contador para saber en que numero va
             L.Invoke(new Action(() => //Invocacion de la accion para actualizar el datagridview
@@ -83,8 +83,8 @@ namespace ProyectoSO1
             number_filling(dgNumero, numbers.ToList());//Llena el datagridview con los numeros
             thread_even = new Thread(new ThreadStart(() => genericCalculation(false, dgPotencia))); // Llamada al método generico para el hilo par
             thread_odd = new Thread(new ThreadStart(() => genericCalculation(true, dgFactorial))); // Llamada al método generico para el hilo impar
-            startOrShowThread(thread_even, "1"); // Llamada al método para el hilo par
-            startOrShowThread(thread_odd, "2"); // Llamada al método para el hilo impar
+            startThread(thread_even); // Llamada al método para el hilo par
+            startThread(thread_odd); // Llamada al método para el hilo impar
         }
         private void btnSalir_Click(object sender, EventArgs e)
         {
