@@ -80,7 +80,7 @@ namespace ProyectoSO1
         #endregion
         private void btnEjecutar_Click(object sender, EventArgs e)
         {
-            number_filling(dgNumero, numbers.ToList());
+            number_filling(dgNumero, numbers.ToList());//Llena el datagridview con los numeros
             thread_even = new Thread(new ThreadStart(() => genericCalculation(false, dgPotencia))); // Llamada al método generico para el hilo par
             thread_odd = new Thread(new ThreadStart(() => genericCalculation(true, dgFactorial))); // Llamada al método generico para el hilo impar
             startOrShowThread(thread_even, "1"); // Llamada al método para el hilo par
