@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "KxpixtCIrLeSSEIi42WeFXfFEVFRT0eub/lnJGQ2rtKRI3oE57YC+dU15qHgdP0jD+Zyb4WlMQnQDhmgqqaXJg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\esteb\\source\\repos\\ProyectoSO1\\ProyectoSO1\\ProyectoSO1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\esteb\\.nuget\\packages\\guna.ui2.winforms\\2.0.4.5\\guna.ui2.winforms.2.0.4.5.nupkg.sha512",
+    "C:\\Users\\esteb\\.nuget\\packages\\system.codedom\\6.0.0\\system.codedom.6.0.0.nupkg.sha512",
+    "C:\\Users\\esteb\\.nuget\\packages\\system.management\\6.0.0\\system.management.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
