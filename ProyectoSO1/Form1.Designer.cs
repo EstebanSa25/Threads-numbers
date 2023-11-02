@@ -37,20 +37,26 @@
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            DataGridViewCellStyle dataGridViewCellStyle9 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle10 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle11 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle12 = new DataGridViewCellStyle();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle7 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle8 = new DataGridViewCellStyle();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            DataGridViewCellStyle dataGridViewCellStyle9 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle10 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle11 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle12 = new DataGridViewCellStyle();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             btnEjecutar = new Guna.UI2.WinForms.Guna2Button();
             btnSalir = new Guna.UI2.WinForms.Guna2Button();
             lblProcesandoNumero = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -67,8 +73,11 @@
             guna2GroupBox3 = new Guna.UI2.WinForms.Guna2GroupBox();
             dgPotencia = new Guna.UI2.WinForms.Guna2DataGridView();
             dataGridViewTextBoxColumn2 = new DataGridViewTextBoxColumn();
-            guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(components);
-            msgAlert = new Guna.UI2.WinForms.Guna2MessageDialog();
+            guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
+            guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(components);
+            guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(components);
+            bpHilos = new Guna.UI2.WinForms.Guna2ProgressBar();
             ((System.ComponentModel.ISupportInitialize)dgNumero).BeginInit();
             guna2GroupBox1.SuspendLayout();
             guna2GroupBox2.SuspendLayout();
@@ -79,6 +88,7 @@
             // 
             // btnEjecutar
             // 
+            btnEjecutar.Animated = true;
             btnEjecutar.BackColor = Color.Transparent;
             btnEjecutar.BorderColor = Color.Blue;
             btnEjecutar.BorderRadius = 20;
@@ -93,7 +103,7 @@
             btnEjecutar.ForeColor = Color.Blue;
             btnEjecutar.HoverState.FillColor = Color.Blue;
             btnEjecutar.HoverState.ForeColor = Color.White;
-            btnEjecutar.Location = new Point(699, 484);
+            btnEjecutar.Location = new Point(746, 495);
             btnEjecutar.Name = "btnEjecutar";
             btnEjecutar.ShadowDecoration.CustomizableEdges = customizableEdges2;
             btnEjecutar.Size = new Size(103, 48);
@@ -103,6 +113,7 @@
             // 
             // btnSalir
             // 
+            btnSalir.Animated = true;
             btnSalir.BackColor = Color.Transparent;
             btnSalir.BorderColor = Color.Blue;
             btnSalir.BorderRadius = 20;
@@ -118,7 +129,7 @@
             btnSalir.ForeColor = Color.Blue;
             btnSalir.HoverState.FillColor = Color.Blue;
             btnSalir.HoverState.ForeColor = Color.White;
-            btnSalir.Location = new Point(579, 484);
+            btnSalir.Location = new Point(628, 495);
             btnSalir.Name = "btnSalir";
             btnSalir.ShadowDecoration.CustomizableEdges = customizableEdges4;
             btnSalir.Size = new Size(103, 48);
@@ -130,27 +141,30 @@
             // 
             lblProcesandoNumero.AccessibleName = "lblProcesandoNumero";
             lblProcesandoNumero.BackColor = Color.Transparent;
+            lblProcesandoNumero.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblProcesandoNumero.Location = new Point(34, 47);
             lblProcesandoNumero.Name = "lblProcesandoNumero";
-            lblProcesandoNumero.Size = new Size(130, 17);
+            lblProcesandoNumero.Size = new Size(165, 23);
             lblProcesandoNumero.TabIndex = 2;
             lblProcesandoNumero.Text = "Procesando Numero: ....";
             // 
             // lblHilo
             // 
             lblHilo.BackColor = Color.Transparent;
+            lblHilo.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblHilo.Location = new Point(34, 87);
             lblHilo.Name = "lblHilo";
-            lblHilo.Size = new Size(43, 17);
+            lblHilo.Size = new Size(50, 23);
             lblHilo.TabIndex = 3;
             lblHilo.Text = "Hilo: ....";
             // 
             // lblTipo
             // 
             lblTipo.BackColor = Color.Transparent;
+            lblTipo.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblTipo.Location = new Point(498, 47);
             lblTipo.Name = "lblTipo";
-            lblTipo.Size = new Size(44, 17);
+            lblTipo.Size = new Size(52, 23);
             lblTipo.TabIndex = 4;
             lblTipo.Text = "Tipo: ....";
             // 
@@ -160,9 +174,10 @@
             dgNumero.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = Color.White;
             dgNumero.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.TopCenter;
+            dgNumero.BackgroundColor = Color.FromArgb(224, 224, 224);
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = Color.FromArgb(242, 245, 250);
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             dataGridViewCellStyle2.ForeColor = SystemColors.WindowText;
             dataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(242, 245, 250);
             dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
@@ -202,7 +217,7 @@
             dgNumero.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty;
             dgNumero.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty;
             dgNumero.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty;
-            dgNumero.ThemeStyle.BackColor = Color.White;
+            dgNumero.ThemeStyle.BackColor = Color.FromArgb(224, 224, 224);
             dgNumero.ThemeStyle.GridColor = Color.FromArgb(231, 229, 255);
             dgNumero.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(242, 245, 250);
             dgNumero.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.None;
@@ -228,18 +243,27 @@
             Numeros.ToolTipText = "Array de Numeros";
             Numeros.Width = 252;
             // 
+            // guna2AnimateWindow1
+            // 
+            guna2AnimateWindow1.AnimationType = Guna.UI2.WinForms.Guna2AnimateWindow.AnimateWindowType.AW_HIDE;
+            guna2AnimateWindow1.TargetForm = this;
+            // 
+            // guna2ShadowForm1
+            // 
+            guna2ShadowForm1.TargetForm = this;
+            // 
             // guna2GroupBox1
             // 
             guna2GroupBox1.BackColor = Color.Transparent;
             guna2GroupBox1.BorderRadius = 20;
             guna2GroupBox1.Controls.Add(dgNumero);
             guna2GroupBox1.CustomBorderColor = Color.Blue;
-            guna2GroupBox1.CustomizableEdges = customizableEdges5;
-            guna2GroupBox1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2GroupBox1.CustomizableEdges = customizableEdges15;
+            guna2GroupBox1.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             guna2GroupBox1.ForeColor = Color.White;
             guna2GroupBox1.Location = new Point(12, 134);
             guna2GroupBox1.Name = "guna2GroupBox1";
-            guna2GroupBox1.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            guna2GroupBox1.ShadowDecoration.CustomizableEdges = customizableEdges16;
             guna2GroupBox1.Size = new Size(253, 333);
             guna2GroupBox1.TabIndex = 9;
             guna2GroupBox1.Text = "Numeros Enteros";
@@ -250,12 +274,12 @@
             guna2GroupBox2.BorderRadius = 15;
             guna2GroupBox2.Controls.Add(dgFactorial);
             guna2GroupBox2.CustomBorderColor = Color.Blue;
-            guna2GroupBox2.CustomizableEdges = customizableEdges7;
-            guna2GroupBox2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2GroupBox2.CustomizableEdges = customizableEdges13;
+            guna2GroupBox2.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             guna2GroupBox2.ForeColor = Color.White;
             guna2GroupBox2.Location = new Point(284, 134);
             guna2GroupBox2.Name = "guna2GroupBox2";
-            guna2GroupBox2.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            guna2GroupBox2.ShadowDecoration.CustomizableEdges = customizableEdges14;
             guna2GroupBox2.Size = new Size(271, 333);
             guna2GroupBox2.TabIndex = 10;
             guna2GroupBox2.Text = "Numeros impares";
@@ -265,40 +289,41 @@
             // 
             dgFactorial.AllowUserToAddRows = false;
             dgFactorial.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle5.BackColor = Color.White;
-            dgFactorial.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
-            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle6.BackColor = Color.FromArgb(242, 245, 250);
-            dataGridViewCellStyle6.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle6.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = Color.FromArgb(242, 245, 250);
-            dataGridViewCellStyle6.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = DataGridViewTriState.True;
-            dgFactorial.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle9.BackColor = Color.White;
+            dgFactorial.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
+            dgFactorial.BackgroundColor = Color.FromArgb(224, 224, 224);
+            dataGridViewCellStyle10.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle10.BackColor = Color.FromArgb(242, 245, 250);
+            dataGridViewCellStyle10.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle10.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle10.SelectionBackColor = Color.FromArgb(242, 245, 250);
+            dataGridViewCellStyle10.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = DataGridViewTriState.True;
+            dgFactorial.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             dgFactorial.ColumnHeadersHeight = 40;
             dgFactorial.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dgFactorial.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn1 });
-            dataGridViewCellStyle7.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = Color.White;
-            dataGridViewCellStyle7.Font = new Font("Segoe UI", 10.5F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle7.ForeColor = Color.Gray;
-            dataGridViewCellStyle7.SelectionBackColor = Color.FromArgb(0, 0, 192);
-            dataGridViewCellStyle7.SelectionForeColor = Color.White;
-            dataGridViewCellStyle7.WrapMode = DataGridViewTriState.False;
-            dgFactorial.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle11.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = Color.White;
+            dataGridViewCellStyle11.Font = new Font("Segoe UI", 10.5F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle11.ForeColor = Color.Gray;
+            dataGridViewCellStyle11.SelectionBackColor = Color.FromArgb(0, 0, 192);
+            dataGridViewCellStyle11.SelectionForeColor = Color.White;
+            dataGridViewCellStyle11.WrapMode = DataGridViewTriState.False;
+            dgFactorial.DefaultCellStyle = dataGridViewCellStyle11;
             dgFactorial.Dock = DockStyle.Fill;
             dgFactorial.GridColor = Color.FromArgb(231, 229, 255);
             dgFactorial.Location = new Point(0, 40);
             dgFactorial.Name = "dgFactorial";
             dgFactorial.ReadOnly = true;
-            dataGridViewCellStyle8.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = SystemColors.Control;
-            dataGridViewCellStyle8.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle8.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle8.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = DataGridViewTriState.True;
-            dgFactorial.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle12.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle12.BackColor = SystemColors.Control;
+            dataGridViewCellStyle12.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle12.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle12.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = DataGridViewTriState.True;
+            dgFactorial.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             dgFactorial.RowHeadersVisible = false;
             dgFactorial.RowTemplate.Height = 25;
             dgFactorial.ScrollBars = ScrollBars.None;
@@ -309,7 +334,7 @@
             dgFactorial.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty;
             dgFactorial.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty;
             dgFactorial.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty;
-            dgFactorial.ThemeStyle.BackColor = Color.White;
+            dgFactorial.ThemeStyle.BackColor = Color.FromArgb(224, 224, 224);
             dgFactorial.ThemeStyle.GridColor = Color.FromArgb(231, 229, 255);
             dgFactorial.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(242, 245, 250);
             dgFactorial.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.None;
@@ -341,12 +366,12 @@
             guna2GroupBox3.BorderRadius = 15;
             guna2GroupBox3.Controls.Add(dgPotencia);
             guna2GroupBox3.CustomBorderColor = Color.Blue;
-            guna2GroupBox3.CustomizableEdges = customizableEdges9;
-            guna2GroupBox3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2GroupBox3.CustomizableEdges = customizableEdges11;
+            guna2GroupBox3.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             guna2GroupBox3.ForeColor = Color.White;
             guna2GroupBox3.Location = new Point(579, 134);
             guna2GroupBox3.Name = "guna2GroupBox3";
-            guna2GroupBox3.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            guna2GroupBox3.ShadowDecoration.CustomizableEdges = customizableEdges12;
             guna2GroupBox3.ShadowDecoration.Depth = 5;
             guna2GroupBox3.Size = new Size(270, 333);
             guna2GroupBox3.TabIndex = 11;
@@ -357,40 +382,41 @@
             // 
             dgPotencia.AllowUserToAddRows = false;
             dgPotencia.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle9.BackColor = Color.White;
-            dgPotencia.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
-            dataGridViewCellStyle10.Alignment = DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle10.BackColor = Color.FromArgb(242, 245, 250);
-            dataGridViewCellStyle10.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle10.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle10.SelectionBackColor = Color.FromArgb(242, 245, 250);
-            dataGridViewCellStyle10.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = DataGridViewTriState.True;
-            dgPotencia.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle5.BackColor = Color.White;
+            dgPotencia.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dgPotencia.BackgroundColor = Color.FromArgb(224, 224, 224);
+            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = Color.FromArgb(242, 245, 250);
+            dataGridViewCellStyle6.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle6.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = Color.FromArgb(242, 245, 250);
+            dataGridViewCellStyle6.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = DataGridViewTriState.True;
+            dgPotencia.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             dgPotencia.ColumnHeadersHeight = 40;
             dgPotencia.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dgPotencia.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn2 });
-            dataGridViewCellStyle11.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = Color.White;
-            dataGridViewCellStyle11.Font = new Font("Segoe UI", 10.5F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle11.ForeColor = Color.Gray;
-            dataGridViewCellStyle11.SelectionBackColor = Color.FromArgb(0, 0, 192);
-            dataGridViewCellStyle11.SelectionForeColor = Color.White;
-            dataGridViewCellStyle11.WrapMode = DataGridViewTriState.False;
-            dgPotencia.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle7.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = Color.White;
+            dataGridViewCellStyle7.Font = new Font("Segoe UI", 10.5F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle7.ForeColor = Color.Gray;
+            dataGridViewCellStyle7.SelectionBackColor = Color.FromArgb(0, 0, 192);
+            dataGridViewCellStyle7.SelectionForeColor = Color.White;
+            dataGridViewCellStyle7.WrapMode = DataGridViewTriState.False;
+            dgPotencia.DefaultCellStyle = dataGridViewCellStyle7;
             dgPotencia.Dock = DockStyle.Fill;
             dgPotencia.GridColor = Color.FromArgb(231, 229, 255);
             dgPotencia.Location = new Point(0, 40);
             dgPotencia.Name = "dgPotencia";
             dgPotencia.ReadOnly = true;
-            dataGridViewCellStyle12.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle12.BackColor = SystemColors.Control;
-            dataGridViewCellStyle12.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle12.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle12.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = DataGridViewTriState.True;
-            dgPotencia.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle8.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = SystemColors.Control;
+            dataGridViewCellStyle8.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle8.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = DataGridViewTriState.True;
+            dgPotencia.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             dgPotencia.RowHeadersVisible = false;
             dgPotencia.RowTemplate.Height = 25;
             dgPotencia.ScrollBars = ScrollBars.None;
@@ -401,7 +427,7 @@
             dgPotencia.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty;
             dgPotencia.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty;
             dgPotencia.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty;
-            dgPotencia.ThemeStyle.BackColor = Color.White;
+            dgPotencia.ThemeStyle.BackColor = Color.FromArgb(224, 224, 224);
             dgPotencia.ThemeStyle.GridColor = Color.FromArgb(231, 229, 255);
             dgPotencia.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(242, 245, 250);
             dgPotencia.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.None;
@@ -427,27 +453,69 @@
             dataGridViewTextBoxColumn2.ToolTipText = "Potencias de numeros";
             dataGridViewTextBoxColumn2.Width = 300;
             // 
-            // guna2BorderlessForm1
+            // guna2ControlBox1
             // 
-            guna2BorderlessForm1.BorderRadius = 10;
-            guna2BorderlessForm1.ContainerControl = this;
-            guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
-            guna2BorderlessForm1.TransparentWhileDrag = true;
+            guna2ControlBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            guna2ControlBox1.Animated = true;
+            guna2ControlBox1.CustomizableEdges = customizableEdges9;
+            guna2ControlBox1.FillColor = Color.White;
+            guna2ControlBox1.HoverState.BorderColor = Color.Transparent;
+            guna2ControlBox1.HoverState.FillColor = Color.Transparent;
+            guna2ControlBox1.HoverState.IconColor = Color.Blue;
+            guna2ControlBox1.IconColor = Color.DimGray;
+            guna2ControlBox1.Location = new Point(803, 12);
+            guna2ControlBox1.Name = "guna2ControlBox1";
+            guna2ControlBox1.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            guna2ControlBox1.Size = new Size(30, 30);
+            guna2ControlBox1.TabIndex = 12;
             // 
-            // msgAlert
+            // guna2ControlBox2
             // 
-            msgAlert.Buttons = Guna.UI2.WinForms.MessageDialogButtons.OK;
-            msgAlert.Caption = null;
-            msgAlert.Icon = Guna.UI2.WinForms.MessageDialogIcon.Information;
-            msgAlert.Parent = null;
-            msgAlert.Style = Guna.UI2.WinForms.MessageDialogStyle.Light;
-            msgAlert.Text = null;
+            guna2ControlBox2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            guna2ControlBox2.Animated = true;
+            guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
+            guna2ControlBox2.CustomizableEdges = customizableEdges7;
+            guna2ControlBox2.FillColor = Color.White;
+            guna2ControlBox2.HoverState.IconColor = Color.Blue;
+            guna2ControlBox2.IconColor = Color.DimGray;
+            guna2ControlBox2.Location = new Point(752, 12);
+            guna2ControlBox2.Name = "guna2ControlBox2";
+            guna2ControlBox2.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            guna2ControlBox2.Size = new Size(30, 30);
+            guna2ControlBox2.TabIndex = 13;
+            // 
+            // guna2Elipse1
+            // 
+            guna2Elipse1.TargetControl = this;
+            // 
+            // guna2DragControl1
+            // 
+            guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
+            guna2DragControl1.TargetControl = this;
+            guna2DragControl1.UseTransparentDrag = true;
+            // 
+            // bpHilos
+            // 
+            bpHilos.BorderRadius = 10;
+            bpHilos.CustomizableEdges = customizableEdges5;
+            bpHilos.Location = new Point(12, 473);
+            bpHilos.Maximum = 10;
+            bpHilos.Name = "bpHilos";
+            bpHilos.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            bpHilos.Size = new Size(837, 15);
+            bpHilos.TabIndex = 14;
+            bpHilos.Text = "%";
+            bpHilos.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(861, 544);
+            BackColor = Color.White;
+            ClientSize = new Size(861, 551);
+            Controls.Add(bpHilos);
+            Controls.Add(guna2ControlBox2);
+            Controls.Add(guna2ControlBox1);
             Controls.Add(guna2GroupBox3);
             Controls.Add(guna2GroupBox2);
             Controls.Add(guna2GroupBox1);
@@ -481,13 +549,16 @@
         private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
         private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox2;
         private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox3;
-        private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         public Guna.UI2.WinForms.Guna2HtmlLabel lblProcesandoNumero;
         private Guna.UI2.WinForms.Guna2DataGridView dgPotencia;
         private DataGridViewTextBoxColumn Numeros;
         private Guna.UI2.WinForms.Guna2DataGridView dgFactorial;
-        private Guna.UI2.WinForms.Guna2MessageDialog msgAlert;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
+        private Guna.UI2.WinForms.Guna2ProgressBar bpHilos;
     }
 }

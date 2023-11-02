@@ -4,6 +4,7 @@ namespace ProyectoSO1
     using Microsoft.VisualBasic;
     using System.Diagnostics.Metrics;
     using System.Runtime.CompilerServices;
+    using System.Threading;
     using System.Windows.Forms;
     public partial class Form1 : Form
     {
@@ -12,7 +13,6 @@ namespace ProyectoSO1
         List<int> odd_numbers = new List<int>();//Listas para guardar los numeros impares
         Thread thread_even;//Declaracion de hilo par
         Thread thread_odd;//Declaracion de hilo impar
-
         public Form1()
         {
             InitializeComponent();
@@ -27,18 +27,16 @@ namespace ProyectoSO1
         }
         public void updateLabel(Guna2HtmlLabel lbl, string valor)//Funcion generica que actualiza un label
         {
-            Action update = () => lbl.Text = valor;//Funcion lambda que actualiza el label
-            lbl.Invoke(update);//Invocacion de la accion para actualizar el label
+            Action update = () => lbl.Text = valor;//Funcion lambda que actualiza el label lbl.
+            Invoke(update);//Invocacion de la accion para actualizar el label
         }
         public void genericCalculation(bool odd, Guna2DataGridView data)//Funcion generica que se ejecuta en los hilos
         {
-            List<int> lista = odd ? odd_numbers : even_numbers;// validacion para saber si se ejecuta en par o impar y guarda la lista dependiendo
-            int counter = 0; //Contador para saber en que numero va
+            List<int> lista = odd ? odd_numbers : even_numbers;// validacion para saber si se ejecuta el hilo en modo en par o impar y guarda la lista dependiendo
             foreach (var number in numbers)
             {
-                updateLabel(lblProcesandoNumero, $"Procesando:{numbers[counter]}");//Actualiza el label del numero
-
-                if (odd && !isEven(number))//Validacion para saber si es impar o par
+                updateLabel(lblProcesandoNumero, $"Procesando:{number}");/*Actualiza el label del numero*/
+                if (odd && !isEven(number))//Validacion para saber si el numero es impar o par
                 {
                     updateLabel(lblTipo, "Tipo: impar");//Actualiza el label del tipo
                     lista.Add(Calculate_Factorial(number));//Agrega el factorial a la lista
@@ -51,7 +49,7 @@ namespace ProyectoSO1
                     updateLabel(lblHilo, $"Hilo: {thread_even.ManagedThreadId}");//Actualiza el label del hilo
                 }
                 Thread.Sleep(1000);//Espera 1 segundo
-                counter++;//Aumenta el contador
+                bpHilos.Value = number;//Actualiza la barra de progreso
             }
             number_filling(data, lista);//Llena el datagridview con la lista
         }
